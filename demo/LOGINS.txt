@@ -1,0 +1,38 @@
+INVISIBLEINK - DEMO LOGINS
+==========================
+
+HOW TO LOG IN
+On the login screen, type the User ID and click Login.
+The app only asks for the User ID. It does not have a password box, so the
+passwords below are stored in the database but never checked.
+
+User ID  Name           Opens                        Password (stored only)
+-------  -------------  ---------------------------  ----------------------
+   1     Front Desk     Receptionist booking portal  Reception1!
+   2     Nick           Nick's schedule              Nick2024!
+   3     Oxley          Oxley's schedule             Oxley2024!
+   4     Dave           Dave's schedule              Dave2024!
+   5     Claudia        Claudia's schedule           Claudia2024!
+   6     Skelly         Skelly's schedule            Skelly2024!
+   7     Spudgun        Spudgun's schedule           Spudgun2024!
+   8     Administrator  Admin portal                 Admin2024!
+
+
+DATABASE
+--------
+SQLite file:  invisibleink.db  (in the same folder as InvisibleInk.exe)
+No username or password. To look inside it, open the file with
+"DB Browser for SQLite" (free: https://sqlitebrowser.org).
+
+Tables: StaffInformation, PiercingData, InformationCustomer, Bookings
+
+
+STAFF WORKING DAYS (used by the booking screen)
+-----------------------------------------------
+Nick      Mon Tue Wed Fri Sat
+Oxley     Mon Thu Sun
+Dave      Mon Wed Fri Sun
+Claudia   Tue Wed Thu Sat Sun
+Skelly    Tue Sat
+Spudgun   Thu Fri
+Hours: 9:00 AM - 4:40 PM, 20-minute slots.

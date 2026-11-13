@@ -1,0 +1,13 @@
+# Build output
+bin/
+obj/
+*.pdb
+
+# Visual Studio
+.vs/
+*.user
+
+# Demo build artifacts (exe is >100 MB - rebuild with the publish command in README)
+demo/*.exe
+demo/*.db
+*.db

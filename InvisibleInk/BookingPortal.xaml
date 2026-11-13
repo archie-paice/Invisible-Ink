@@ -1,0 +1,68 @@
+﻿<Window x:Class="InvisibleInk.BookingPortal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InvisibleInk"
+        mc:Ignorable="d"
+        Title="Booking Portal" Height="450" Width="850">
+    <Grid Background="#FFEAEAEA">
+        <DatePicker x:Name="datePicker" SelectedDateChanged="DatePicker_SelectedDateChanged" HorizontalAlignment="Left" Height="34" Margin="180,242,0,0" VerticalAlignment="Top" Width="189"/>
+        <Label Content="What Pericing:" HorizontalAlignment="Left" Height="40" Margin="10,103,0,0" VerticalAlignment="Top" Width="165"/>
+        <Label Content="Who Is It For:" HorizontalAlignment="Left" Height="40" Margin="10,152,0,0" VerticalAlignment="Top" Width="165"/>
+        <Label Content="Select Date:" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="165" Margin="10,242,0,0"/>
+        <Label Content="Select Time:" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="165" Margin="10,198,0,0"/>
+        <Label Content="Staff Member:" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="165" Margin="10,281,0,0"/>
+        <ComboBox x:Name="BoxWhoFor" Height="38" Margin="180,152,481,0" VerticalAlignment="Top" Width="189">
+            <ComboBoxItem Content="Client"/>
+            <ComboBoxItem Content="Gift"/>
+        </ComboBox>
+        <Label Content="Client Name:" HorizontalAlignment="Left" Height="40" Margin="10,54,0,0" VerticalAlignment="Top" Width="165"/>
+        <TextBlock x:Name="FullNameLabel" HorizontalAlignment="Left" Height="40" Margin="540,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" FontSize="16"/>
+        <ListBox x:Name="outputListBox" HorizontalAlignment="Left" Height="192" Margin="388,103,0,0" VerticalAlignment="Top" Width="400"/>
+        <TextBox x:Name="ClientName" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200" Margin="180,51,0,0" TextChanged="ClientName_TextChanged" Height="43"/>
+
+        <Label x:Name="lblBookingDetails" Content="" HorizontalAlignment="Left" Height="33" Margin="388,300,0,0" VerticalAlignment="Top" Width="278" RenderTransformOrigin="0.396,0.429"/>
+        <Button x:Name="ClearBooking" Content="Clear Booking" HorizontalAlignment="Left" Height="35" Margin="674,337,0,0" VerticalAlignment="Top" Width="114" Click="ClearBooking_Click"/>
+        <Button Content="Submit" HorizontalAlignment="Left" Height="35" Margin="290,348,0,0" VerticalAlignment="Top" Width="78" Click="Button_Submit_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="41" Margin="106,10,0,0" TextWrapping="Wrap" Text="New Booking" VerticalAlignment="Top" Width="185" FontSize="24"/>
+        <ComboBox x:Name="PiercingChoice" HorizontalAlignment="Left" Height="40" Margin="180,103,0,0" VerticalAlignment="Top" Width="189">
+
+        </ComboBox>
+        <ComboBox x:Name="timeComboBox" HorizontalAlignment="Left" Height="35" Margin="180,0,0,0" VerticalAlignment="Center" Width="189">
+            <ComboBoxItem Content="9:00 AM"/>
+            <ComboBoxItem Content="9:20 AM"/>
+            <ComboBoxItem Content="9:40 AM"/>
+            <ComboBoxItem Content="10:00 AM"/>
+            <ComboBoxItem Content="10:20 AM"/>
+            <ComboBoxItem Content="10:40 AM"/>
+            <ComboBoxItem Content="11:00 AM"/>
+            <ComboBoxItem Content="11:20 AM"/>
+            <ComboBoxItem Content="11:40 AM"/>
+            <ComboBoxItem Content="12:00 PM"/>
+            <ComboBoxItem Content="1:00 PM"/>
+            <ComboBoxItem Content="1:20 PM"/>
+            <ComboBoxItem Content="1:40 PM"/>
+            <ComboBoxItem Content="2:00 PM"/>
+            <ComboBoxItem Content="2:20 PM"/>
+            <ComboBoxItem Content="2:40 PM"/>
+            <ComboBoxItem Content="3:00 PM"/>
+            <ComboBoxItem Content="3:20 PM"/>
+            <ComboBoxItem Content="3:40 PM"/>
+            <ComboBoxItem Content="4:00 PM"/>
+            <ComboBoxItem Content="4:20 PM"/>
+            <ComboBoxItem Content="4:40 PM"/>
+        </ComboBox>
+        <CheckBox x:Name="DepositPaid" Content="Deposit Paid" HorizontalAlignment="Left" Height="31" Margin="180,352,0,0" VerticalAlignment="Top" Width="94"/>
+        <Button x:Name="btnAddNewBooking" Content="Add New Booking" HorizontalAlignment="Left" Height="34" Margin="552,338,0,0" VerticalAlignment="Top" Width="114" Click="btnAddNewBooking_Click"/>
+        <RadioButton x:Name="NewClient" Content="New Client" HorizontalAlignment="Left" Height="17" Margin="180,330,0,0" VerticalAlignment="Top" Width="105" Checked="NewClient_Checked"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Height="35" Margin="730,13,0,0" VerticalAlignment="Top" Width="60" Click="btnExit_Click" RenderTransformOrigin="0.681,0.307"/>
+        <ComboBox x:Name="employeeCombobox" HorizontalAlignment="Left" Height="39" Margin="180,281,0,0" VerticalAlignment="Top" Width="189"/>
+        <Button x:Name="bookingchange" Content="Change Booking" HorizontalAlignment="Left" Height="36" Margin="425,338,0,0" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.431,0.074" Click="bookingchange_Click"/>
+        <ListBox x:Name="clientSearchListBox" VerticalAlignment="Top" HorizontalAlignment="Left" Width="139" Margin="388,51,0,0" SelectionChanged="ClientSearchListBox_SelectionChanged" Height="43"/>
+        <Label Content="If No Name Comes Up In the Search Box&#xD;&#xA; Please Click New Client" HorizontalAlignment="Left" Height="43" Margin="532,51,0,0" VerticalAlignment="Top" Width="212" IsEnabled="False" FontSize="11" Foreground="Black"/>
+
+
+
+    </Grid>
+</Window>

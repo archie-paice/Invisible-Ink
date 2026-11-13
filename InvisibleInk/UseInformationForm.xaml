@@ -1,0 +1,20 @@
+﻿<Window x:Class="InvisibleInk.UseInformationForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InvisibleInk"
+        mc:Ignorable="d"
+        Title="UseInformationForm" Height="450" Width="800">
+    <Grid Background="#FFEAEAEA">
+        <Label Content="Client Name" HorizontalAlignment="Left" Height="49" Margin="24,91,0,0" VerticalAlignment="Top" Width="153"/>
+        <Label Content="User Description, Age, &#xD;&#xA;are they fit for procedure" HorizontalAlignment="Left" Height="47" Margin="24,155,0,0" VerticalAlignment="Top" Width="172"/>
+        <Label Content="Date of Birth" HorizontalAlignment="Left" Height="49" Margin="23,276,0,0" VerticalAlignment="Top" Width="191"/>
+        <TextBlock x:Name="FullNameLabel" HorizontalAlignment="Left" Height="40" Margin="605,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" FontSize="16"/>
+        <TextBox x:Name="BoxDOB" HorizontalAlignment="Left" Height="49" Margin="219,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+        <TextBox x:Name="BoxDescription" HorizontalAlignment="Left" Height="116" Margin="219,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211"/>
+        <TextBox x:Name="BoxName" HorizontalAlignment="Left" Height="49" Margin="220,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211"/>
+        <Button x:Name="btnSubmit" Content="Submit UserInformation" HorizontalAlignment="Left" Margin="219,345,0,0" VerticalAlignment="Top" Height="35" Width="211" Click="btnSubmit_Click"/>
+
+    </Grid>
+</Window>
